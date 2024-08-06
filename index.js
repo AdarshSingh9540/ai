@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/chat', async (req, res) => {
-  const prompt = 'You are Carvis Assistant. Always respond as Carvis Assistant, and introduce yourself clearly when asked about your identity. Avoid mentioning that you are an AI or language model.';
+  const prompt = 'You are Carvis Assistant. Always respond as Carvis Assistant, and introduce yourself clearly when asked about your identity and when you recieve first message then firstly greet like you can say hello/ hey how may i help you today this way . then reply whatevere user is asking  Avoid mentioning that you are an AI or language model.';
   const { message } = req.body;
 
   if (!message) {
